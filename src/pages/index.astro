@@ -1,0 +1,117 @@
+---
+import Card from '../components/Card.astro';
+import MainLayout from '../layouts/MainLayout.astro';
+---
+
+<MainLayout title="Home" description="Matrixworks home page." category="Home" >
+    <h1 slot="title">Our Business <span class="text-gradient">Blocks</span></h1>
+
+		<ul role="list" class="link-card-grid">
+
+      <Card title="Data Management" label="PRODUCT" href="/diu">
+        <div>
+          We developed a data management system DIU (Data Intelligence and Union)，It is a product and service for
+          <div class="badge badge-neutral badge-lg">retrieval</div>, 
+          <div class="badge badge-neutral badge-lg">visualization</div>, 
+          <div class="badge badge-neutral badge-lg">trading</div>
+          and
+          <div class="badge badge-neutral badge-lg">management</div>
+          to structured data.
+        </div>
+      </Card>
+
+      <Card title="Data Acquisition" label="SERVICE" href="/data-acquisition">
+        <div>
+          Customized according to customer needs,
+          We provide public data collection services, such as 
+          <div class="badge badge-neutral badge-lg">macroeconomic</div> data, 
+          <div class="badge badge-neutral badge-lg">financial</div> data, 
+          <div class="badge badge-neutral badge-lg">industry</div> data, 
+          <div class="badge badge-neutral badge-lg">social media</div> data, 
+          etc.
+        </div>
+      </Card>
+
+      <Card title="Data Protection" label="SOLUTION" href="/data-protection">
+        <div>
+          We provide solutions to comprehensively protect user data, including 
+          <div class="badge badge-neutral badge-lg">user privacy</div> protection, 
+          data <div class="badge badge-neutral badge-lg">storage security</div>, 
+          and data <div class="badge badge-neutral badge-lg">communication security</div>, 
+          etc.
+        </div>
+      </Card>
+
+      <Card title="Secure Email & VPN" label="TURNKEY" href="/email-vpn">
+        <div>
+          We provide 
+          <div class="badge badge-neutral badge-lg">open source</div>
+          email construction services that support anti-spam and anti-virus,
+          Increased
+          <div class="badge badge-neutral badge-lg">storage</div> and
+          <div class="badge badge-neutral badge-lg">communication</div>
+          <div class="badge badge-neutral badge-lg">security</div>
+          for email server.
+          Provide open source
+          <div class="badge badge-neutral badge-lg">VPN</div>
+          solutions for enterprise.
+        </div>
+      </Card>
+
+      <Card title="e-Commerce SEO" label="TURNKEY" href="/website-seo">
+        <div>
+          We provide Website 
+          <div class="badge badge-neutral badge-lg">SEO</div>, Site
+          <div class="badge badge-neutral badge-lg">Templates</div>,
+          <div class="badge badge-neutral badge-lg">External Link</div>,
+          <div class="badge badge-neutral badge-lg">Social & Video</div>
+          Content Promotion for e-Commerce companies</div>
+      </Card>
+
+      <Card title="Outsourcing" label="SERVICE" href="/outsourcing">
+        <div>
+          We provide
+          <div class="badge badge-neutral badge-lg">human resources</div>,
+          outsourcing services, Our team's
+          <div class="badge badge-neutral badge-lg">tech stack</div>
+          have C++, Golang, Python, Nodejs, Vue, Astro, TailwindCSS, iOS & Android App,
+          Docker & Compose, MySQL, PostgreSQL, Redis, Socket Programming.
+        </div>
+      </Card>
+
+      <!--
+      <Card title="Audio & Video Editing" href="/av-editing">
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+      </Card>
+
+      <Card title="AI Prompt Engineering" href="/ai-prompt">
+        <p>If a dog chews shoes whose shoes does he choose?</p>
+      </Card>
+      -->
+
+		</ul>
+</MainLayout>
+
+<style>
+	h1 {
+		font-size: 3rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+    margin-top: 2em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
